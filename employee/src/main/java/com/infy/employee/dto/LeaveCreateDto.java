@@ -1,0 +1,47 @@
+package com.infy.employee.dto;
+
+import java.time.LocalDate;
+
+import com.infy.employee.enums.LeaveType;
+
+public class LeaveCreateDto {
+	private Long employeeId;
+	private LocalDate startDate;
+	private LocalDate endDate;
+	private String reason;
+	private LeaveType type;
+	public Long getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(Long employeeId) {
+		this.employeeId = employeeId;
+	}
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(LocalDate startDate) {
+		this.startDate = startDate;
+	}
+	public LocalDate getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(LocalDate endDate) {
+		this.endDate = endDate;
+	}
+	public String getReason() {
+		return reason;
+	}
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+	public LeaveType getType() {
+		return type;
+	}
+	public void setType(LeaveType type) {
+		this.type = type;
+	}
+	
+	
+	
+
+}
